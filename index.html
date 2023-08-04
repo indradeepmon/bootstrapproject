@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>iCoder - Heaven for Programmers</title>
+</head>
+<style>
+  #tbb {
+    color: yellow;
+    font-style: bold;
+    font-family: cursive;
+    font-size: 15px;
+    border-radius: 10px;
+
+
+  }
+
+  #bmw:hover {
+    background-color: lightyellow;
+  }
+
+  #bmw {
+    border-radius: 80px;
+    width: 250px;
+  }
+
+  #exter {
+    box-shadow: 5px 5px 5px 5px red;
+    position: sticky;
+  }
+
+
+  #lol1:hover {
+    background-color: #e5e4e2;
+
+
+  }
+
+  #lol2:hover {
+    background-color: #e5e4e2
+  }
+
+  #lol3:hover {
+    background-color: #e5e4e2
+  }
+
+  #lol4:hover {
+    background-color: #e5e4e2
+  }
+
+
+  #ftr {
+
+    background-color: rgb(10, 150, 205);
+    color: antiquewhite;
+    font-weight: 999;
+    box-shadow: 5px 5px 7px gray;
+    border-radius: 25px;
+
+
+  }
+
+  #ll1 {
+    color: whitesmoke;
+    padding-left: 15px;
+  }
+
+  #ll2 {
+    color: whitesmoke;
+    ;
+    padding-left: 15px;
+  }
+
+  #ll3 {
+    color: whitesmoke;
+    ;
+    padding-left: 15px;
+  }
+
+  #lll {
+    color: whitesmoke;
+    padding-left: 15px;
+  }
+
+  #lll:hover {
+    text-decoration: underline wheat;
+    font-size: 18px;
+    font-style: bolder;
+  }
+
+  #ll1:hover {
+    text-decoration: underline wheat;
+    font-size: 18px;
+    font-style: bolder;
+  }
+
+  #ll2:hover {
+    text-decoration: underline wheat;
+    font-size: 18px;
+    font-style: bolder;
+  }
+
+  #ll3:hover {
+    text-decoration: underline wheat;
+    font-size: 18px;
+    font-style: bolder;
+  }
+
+  #ftr:hover {
+    background-color: black;
+    box-shadow: 10px 10px 10px rgb(255, 204, 108);
+  }
+
+  #boto:hover {
+    background-color: rgb(251, 192, 116);
+    color: black;
+
+
+  }
+
+  #boto1:hover {
+    background-color: rgb(251, 192, 116);
+    color: black;
+
+
+  }
+</style>
+
+<body>
+
+
+
+  <nav id="bam" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">iCoder</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse " data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Topics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Technology</a>
+            <a class="dropdown-item" href="#">Web Development</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Support</a>
+            <a class="dropdown-item" href="#">Write for us</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+
+
+
+      </ul>
+
+
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id="bmw" type="search" placeholder="Search" aria-label="Search">
+        <button id="tbb" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+      <div class="mx-2">
+        <button class="btn btn-danger" id="boto" data-toggle="modal" data-target="#loginmodal" data-toggle="modal"
+          data-target="#loginmodal">Login</button>
+
+        <button class="btn btn-danger" id="boto1" data-toggle="modal" data-target="#signupmodal" data-toggle="modal"
+          data-target="#loginmodal">SignUP</button>
+      </div>
+
+
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- LOGIN Modal -->
+  <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="loginmodallabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login to iCoder</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         
+         
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--Sign Up Modal -->
+  <div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupmodallabel">Get An iCoder Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+              <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+
+            
+            <button type="submit" class="btn btn-primary">Create Account</button>
+
+          </form>
+
+        </div>
+
+
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="b1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to iCoder</h2>
+          <p>Technology, News and Trends</p>
+          <button class="btn btn-danger">Technology</button>
+
+          </button><button class="btn btn-primary">Web Development</button>
+
+          </button><button class="btn btn-success">Tech Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="b2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>The Besr Coding Blog</h2>
+          <p>Technology, News and Trends</p>
+          <button class="btn btn-danger">Technology</button>
+
+          </button><button class="btn btn-primary">Web Development</button>
+
+          </button><button class="btn btn-success">Tech Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="b3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+
+
+          <h2 id="asd">Award winning Blog</h2>
+
+          <p>Technology, News and Trends</p>
+          <button class="btn btn-danger">Technology</button>
+
+          </button><button class="btn btn-primary">Web Development</button>
+
+          </button><button class="btn btn-success">Tech Fun</button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a id="nn" class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static" id="lol1">
+            <strong class="d-inline-block mb-2 text-primary">Bootstrap Templates</strong>
+            <h3 class="mb-0">Featured post</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="about-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static" id="lol2">
+            <strong class="d-inline-block mb-2 text-danger">Learn Designing</strong>
+            <h3 class="mb-0">Post title</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="tt1jpg.jpg" alt="">
+
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static" id="lol3">
+            <strong class="d-inline-block mb-2 text-success">Global Coding Conferences</strong>
+            <h3 class="mb-0">Featured post</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="about-3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static" id="lol4">
+            <strong class="d-inline-block mb-2 text-warning">Python</strong>
+            <h3 class="mb-0">Learn Python</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOUAAADcCAMAAAC4YpZBAAAA4VBMVEX///82aZT/wzExZpL/0WP/9Nf/wi1njq7M2eP7/P3/xTX/xz0+b5n/+/H/3Yz/+u6huMz//ff/5qzh6O5Jd5+/zt3Z2dlubm51dXXu7u7/2oVfh6n19fVnZ2d8fHz/78b/1HG6urqNjY2GpL7/z1tfX1+wsLDT09OgoKDp6enAwMCVlpbKysqEhIT/+OXe5u1SfqP/ykh2l7WPq8P/8c7/5KP/yUf/7L7/02qYssixxdX/5ab/4Jb/2n6cnJxchayestVIdaM4b4toirnR2e6ou9aLpsdzlLvb4fS2xuCtueb54nqfAAAL9UlEQVR4nO2de3uquhLGrVUEpSpeoYI3LIoFxVurVu3Ze6/LWef7f6CTgFa0rQQIBN28f9XiWk9+ncnMJE5iIhErVqxYNyqGEUWxXC6PoWgo86dxuSyABwzp4fkXIwrlMV1dF1eyPM003g2jAmUYRiOTmcqzVXFdpcdlkblaVkYEgOuZnDEqd9+LNRrTWbFKl6/RqACRLsqNCnsB0IZaeZ+uquMrA2VEujg10Ag/VMnM6PL1cALG2btLxL33TtfXwgkY3ZrRZtDr4GTKxYZnRmjPikyLpCGcxNDTSxEVifP9P2XSGJfFVDN+DLnHNGaRxmTohm9GqIocYUyGzmCBjDamIPt31wPmKqohiKnaAs8925jKcsZzKDKqEU0odlOymRUNlyFV2SMnOx2T5vlSDG0D+l0VTFuA9OkRs7KOpDHF4tGUjaO/CV4xp5EMQOLsQMn+9dMWO8ZTb5TRnJnHafn3Pz9svxd/eou8lV9RDLM2yl/2yMH8MTxRsr+j6LK2EFu0W8FzrZCJOOVKsD8Yeyz7MlHMJUfK+5P67CTD3BJlhrb93p5h3FFG3GMr9ok59lrCR53SXhWUV15L+MhT3r3/2Vd445Xngj36lPfGzKzW11Pvi7HoU96xbKWRyXjfzLsOSgyKKYkppowpY8roKaa8HUpxVkEU4l8jkpTMuIqmFeIOSSQpYcsLihLVxv01UyKKjin/nZRcunWqeboQ0jiZstVp5k1FwwXlw6Z3qlQ7X5pzgROK42pxNs00wPLRm1AXnSZl4TFJnSk7WW6C5WTK1Rnsj7j3IzTIA2U2eS6KSqYW6eAgAaNxhzpKv/qWEoLmtq2HYBgZGjWhB04J1CsFEobEaiY0OyJQUpO3EX7IcjFMQzpTQkzsTisUK2EaEoEySfVeMYdazx+cB0iZpJYtrJDMOmR3RaJMZh9xTk2GzoTsrmiUyZcFxqn531+h+ysaJZXC57Piz78w73Zgo8xtsBmThL+iUWI0puj5I8gQKHN5TNmEjCnRKJPJJZ66nSFjSlTKlwUWY2Lr7Q2GMrvFkTOZ0Es7d5RUD0f8KctEGO/upgIaJRaXRd2Mwi4ZjRK4rP+FJjGHvTNb10dbJ0iQMv1HWRH3hzyoYtcmZduZsvfqm9Jz65VfGTTsGEqnKEfKif+JWUXcPcUt1gw+ideeI2Uyl/ddy5KalqzVnV+aOFNm234zpjgjsOaCalh9o5ucIySYmH7DD/ZPmBHFWoeDCs7BB0ddUCZV3lmmnCNMSxB+/AZZQjXB/swMh+KwoPp580tJJMRWZlbnO0K2hMptfFKuSVB+HEwsvSA4LNzK80kZ/jYsqAfkfV/+qO1YxFpq+6T03qrsHfJwYJhDNGWS8ks5CzuRVDJ/DqdRWik0S14bJVtprMaHxv7RFiXA4qBkwlxCs8a0OP44o/GAlEUwUXq1JetOFSMjF2nbfSkFdEj/lJ4OT8LOfHm2WhVRtV6v6bFgvxNm5AISA6XrdMkacrE6Nu9hQpbZuWYT12q7gAyfkm0Uab93L3HpTQ8xUZKhNFa037uIRq1Nz40hQ6dk/6kKZ//BA7oKhdFo/rppT3JJtGKADCUr0zY7cqN0q7TY5JH1uG23e5OXrEtEHJQu8iUrj22JoLV4TIEx51wom83Cviz3CpGSlT/OvnLp0rb3AofsZczhU6JXeOzxAO2o1J5kQwIMmfLjRgyutZ24DR+kKVE/u2TlfXR9KKU8xA/ClKir6Pe9vxbeeiEjQm19UiLuiLAzay1RWEwIQPreEUH7AOHeqJrv5kokIP3vbiHuVE4tU85JuGuSein5pBwj9YdUiuabC1tXRTY2St+7zmWUBea9YcYe7pWIvyap3twnpYiUMK0DLoRMmaRSfj/zYn4ipBJWNqflnIwpk7lH340F/zP+dnTYygrWPdyCkCkxNIn8cL6d595Yw3cWUHfCcVPi6CtwDj/7bJkm5LA4OvEQws99A1JyrRcykDj6fRBqvPsGTCRcyeVuDSaBaekfEqFv1KJ8IBV8MPXhObnsnjJPhhJPT6Xz4suiLJChpCZ+i1hL9LuDyxKlxNbr7BRlSVLiiT1QVQdjEqVs4zpu6tQHTJASzEpsB9ocjEmQEudBr/LlHgqClBgPQIGS/f3+QgQiRonTXxPwoNel4/ekKKncBu+Z4fKlBlJClBTe05cJeK3NhTqPDCWVe8R+ZwFT/f0tJhnKySaAixmYH1P2m3xCgJLK9oI4xw9PDcvftLCHTkklX7atgG4SYcYr40tzhksJr0tpB2NIS2J1+tU1IiFSUsncJPX4GiBjAl4Js54aFZb1RTlJedeyvXlNB3RNil1idSVPGycypq4o82nvGoVAeAA9u6mpan5rEyolhWtBGLzOLn+DQqb0+2EjUcWUZx7LoYk00VdCjj7tEpqCyvu+hEyZRWxYw7Q5h1fYqwLfJ/GCUEwZU8aU0VNMGVNaMm8TvXFKKtvbPm7PDljcHGVq0UqP0vPF0s55Y5TZw1YVN3+0Yd4WZXZ5bBZM21r5bovypO+zdbyg4LYoT5qSRvmI29L5VqUvlT25apJ7+5iZ0aT02B2bPbkE1tZJHE1Kjx57XZTcm0fKtxPKUrQ9NuG1p/Kkwyzq0SdRQL1E4UwTu8u2jvdsYbgaLQBxC4+to7ZtLHtVgKPtNQClvZ6Z2c6tZMKlbdkoi+/+W6wCxvR2Wi/bW8xHo1H6zV6tTyLpsAkXN9V8Uq63XC5PVl5RNSVsXfd+zgseira/jGbsMYXvzB7erizMeijhObU3CeYLK3AJYGLY5OqVojop9+JaW4+R9iAquwzqG1bwiUsv/Jlzkk9HeE5+qDDf9Dye5aeoyTbgPhd8ApxL13eegPdne/nX0TUYcq+CecmGi2tBKFAZtDeta7HjQdyo9fbYhvXM523zEx+FD3OT1HYRSr8SfpmX32y27VRvksuef/mYiZfNTSa95Tb/9joPsWEJv7hCOj1/LW3y2227vUylUtb3yKWWy3Z7+5jflF7hV+dFsyHEtbiHAlh0pOfzufWdgHOz36xQuA26WLFixYoVK1asr8SIfu/qvAbVBrsa6TEErw6v/xso624or865RdUcsitKVav1xdr5hbTRFaN1B+ZoXVGKmtrpd9TARoVboiJ13VMyfVXrKFdEOfBCmVAFtV8Tnd8Xqr6/mPsiJXOWQo+vGQbkV5wj9C1BU3a7wX4WCX1t72hqRxMSQkeXeKUDzGJSQj88PAdvGDw/K8NDjFGHg+fuTtGiBbeXMHxu8k2d57tDOL6h3rVMxmh8V2Vqel2S+LoiQMqO0tX5etOqDpj+M1/nwcuBSS10uk29q9fruhJBTEHh+YHWr2nPUlMD/qZIet98wAyfmir8G0jNzrDGAMq6DiynKbwE/w6A/6k77PeVpgQxwX+jd/q12rD5xGvRS5Y1MErT52q69Kx+ogQxtn6Yl9IAxhMR4CoA69mETYhDvt4R4b9WIBzwAGkXPWPWeDhmKIDRZy5RNq0HalfaMUy/Llk2E3ZSV030m/WO+RTSR5myxj+BKXWBch9j1YH0zIDQy++jUKfO922Ug2hTqs0n4LvOlAKkFLqSvg+uWlPSrodS0J/AxESl1D9gQBga3ipl90opPzx2ny8vUx6DTL8pXREliD6dC9FHOaEERXxzH32G/DVFn46ZG5Q6r1mvtUuUjFavW5mEUU4zSVQpBwIcLkiDYLSJDi9ZJZrY2VNKumm0E0oxASamVdrVuhJwgchTPtUHfVWtDaQ6LGRr3afmUAWvO7pJCY02VMVPlLDIUVRBUHd1WANFnlICJbcOinJeMT1TAxV3U9ebzaZJCYbN88+wKPqgVMwaTuw0QWELKv0uKHITfZ0/UNYjSVkfaIOPJQn8DVh5dHedmraPLyJ4DJ5pz5aHgte7DnRxsabofLPbMbeFVGVnBS1xuIvgogRGH0YUVPW4IAYv4dd0HSjBihg+s62QDz+BNwrHn89/iJKOMfZM+0xyG/qWUt2BpUfIgwlM31GKw/o+ntyCvqEEa39zUX0j+opSHQ5AOrmi7VRHCcPuJ0pNb3aV/vXs/yNIVD/hCLWaGsV8ECtWrFgh6v/xSdTOlRcbmAAAAABJRU5ErkJggg==" alt="">
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="container" id="ftr">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2022-2023 iCoder, Inc. <a href="#" id="lll">Privacy</a></p>
+
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary" id="ll1">Home</a>
+        </li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary" id="ll2">About</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary" id="ll3">Contact Us</a>
+        </li>
+
+      </ul>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
